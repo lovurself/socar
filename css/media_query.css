@@ -1,0 +1,14 @@
+@media screen and (max-width: 1400px) {
+  header .inner {
+    width: 1200px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  header .inner {
+    width: 95%;
+  }
+  header .inner nav {
+    display: none;
+  }
+}
