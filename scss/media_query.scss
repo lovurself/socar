@@ -1,20 +1,140 @@
 @charset "utf-8";
 
+// 반응형
+
 @media screen and (max-width: 1400px) {
+    .inner {
+        width: 85.7vw;
+    }
+
     header {
-        .inner {
-            width: 1200px;
+        height: 5.7vw;
+
+        &.subBg {
+            height: 20vw;
+        }
+    }
+
+    main {
+        #main_img {
+            height: 56.3vw;
+
+            .typeit_box {
+                #typeit_txt {
+                    font-size: 3rem;
+                }
+            }
         }
     }
 }
 
 @media screen and (max-width: 1200px) {
+    .inner {
+        width: 95%;
+    }
+
     header {
         .inner {
-            width: 95%;
-
             nav {
                 display: none;
+            }
+
+            #mobile_menu_btn {
+                display: block;
+            }
+        }
+    }
+
+    main {
+        #main_img {
+            .typeit_box {
+                #typeit_txt {
+                    font-size: 2.25rem;
+                }
+            }
+        }
+    }
+}
+
+
+// 태블릿, 모바일
+
+@media screen and (max-width: 992px) {
+    header {
+        height: 8.5vw;
+    }
+
+    main {
+        #main_img {
+            .typeit_box {
+                #typeit_txt {
+                    font-size: 2rem;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        height: 8.5vw;
+
+        .inner {
+            .logo, #mobile_menu_btn {
+                top: 32.5px;
+                font-size: 1.5rem;
+            }
+        }
+    }
+
+    #mobile_menu {
+        width: 40%;
+    
+        .close {
+            margin: 35px 35px 40px;    
+            font-size: 2rem;
+        }
+    
+        .mobile_menu {    
+            .mobile_depth1 {
+                margin-bottom: 25px;
+
+                .mobile_depth1_link {
+                    font-size: 1.3rem;
+                }
+            }
+        }
+    }
+
+    main {
+        #main_img {
+            .typeit_box {
+                #typeit_txt {
+                    font-size: 1.875rem;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    header {
+        height: 8.7vw;
+
+        .inner {
+            .logo, #mobile_menu_btn {
+                top: 25px;
+                font-size: 1.175rem;
+            }
+        }
+    }
+
+    main {
+        #main_img {
+            .typeit_box {
+                #typeit_txt {
+                    font-size: 1.3rem;
+                }
             }
         }
     }

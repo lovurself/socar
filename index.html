@@ -8,15 +8,14 @@
     <link rel="stylesheet" href="css/font.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/media_query.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css"
-      integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7"
+    <script
+      src="https://kit.fontawesome.com/913e1645fa.js"
       crossorigin="anonymous"
-    />
+    ></script>
     <title>SOCAR</title>
   </head>
   <body>
+    <!-- 헤더영역 -->
     <header id="menu_wrap">
       <div class="inner">
         <h1 class="logo"><a href="#">SOCAR</a></h1>
@@ -57,29 +56,132 @@
             </li>
           </ul>
         </nav>
-        <h2 class="moblie_menu_btn">
-          <span class="open"><i class="fa-solid fa-ellipsis-stroke"></i></span>
+        <h2 id="mobile_menu_btn">
+          <span class="open"><i class="fas fa-bars"></i></span>
         </h2>
       </div>
-      <div id="mobile_menu"></div>
     </header>
 
+    <!-- 모바일 메뉴창 -->
+    <nav id="mobile_menu">
+      <h2 class="close">
+        <i class="fas fa-times"></i>
+      </h2>
+      <ul class="mobile_menu">
+        <li class="mobile_depth1">
+          <a href="#" class="mobile_depth1_link">안내</a>
+          <ul class="mobile_depth2">
+            <li><a href="#">이용안내</a></li>
+            <li><a href="#">요금안내</a></li>
+            <li><a href="#">혜택안내</a></li>
+            <li><a href="#">쏘카존 개설 신청</a></li>
+          </ul>
+        </li>
+        <li class="mobile_depth1">
+          <a href="#" class="mobile_depth1_link">쏘카서비스</a>
+          <ul class="mobile_depth2">
+            <li><a href="#">쏘카 비즈니스</a></li>
+            <li><a href="#">쏘카 플랜</a></li>
+          </ul>
+        </li>
+        <li class="mobile_depth1">
+          <a href="#" class="mobile_depth1_link">쏘카소개</a>
+          <ul class="mobile_depth2">
+            <li><a href="#">회사소개</a></li>
+            <li><a href="#">경영정보</a></li>
+            <li><a href="#">재무정보</a></li>
+            <li><a href="#">공시정보</a></li>
+            <li><a href="#">공고</a></li>
+            <li><a href="#">IR</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- 컨텐츠영역 -->
     <main>
+      <!-- 메인이미지 -->
       <section id="main_img">
         <div class="typeit_box">
           <h1 id="typeit_txt"></h1>
         </div>
       </section>
 
+      <!-- 카드애니메이션 -->
+      <section id="card_ani">
+        <div class="inner">
+          <div class="card_box">
+            <ul>
+              <li class="card">
+                <ul>
+                  <li class="card_img"></li>
+                  <li class="card_txt">
+                    <h3>24시간 언제나</h3>
+                    <p>
+                      한밤중이나 주말에도 스마트폰으로 시간에 구애받지 않고
+                      쏘카와 함께 이동하세요.
+                    </p>
+                  </li>
+                </ul>
+              </li>
+              <li class="card">
+                <ul>
+                  <li class="card_img"></li>
+                  <li class="card_txt">
+                    <h3>원하는 곳에서</h3>
+                    <p>
+                      내 주변 3분 거리 쏘카존에서 혹은 내가 있는 곳으로 쏘카를
+                      불러 어디서나 편하게 출발하세요.
+                    </p>
+                  </li>
+                </ul>
+              </li>
+              <li class="card">
+                <ul>
+                  <li class="card_img"></li>
+                  <li class="card_txt">
+                    <h3>필요한 시간만큼</h3>
+                    <p>
+                      간단한 장보기부터 주말여행까지 10분 단위로 원하는 만큼만
+                      이용하세요.
+                    </p>
+                  </li>
+                </ul>
+              </li>
+              <li class="card">
+                <ul>
+                  <li class="card_img"></li>
+                  <li class="card_txt">
+                    <h3>다양한 차종을</h3>
+                    <p>
+                      연인과의 드라이브부터 가족 캠핑까지 상황에 맞게 50여 종의
+                      차량을 선택해서 이용하세요.
+                    </p>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="drop_ball">
+            <div class="line"></div>
+            <div class="ball"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 사용자수영역 -->
       <section></section>
     </main>
 
+    <!-- 푸터영역 -->
     <footer></footer>
 
+    <!-- javascript모음 -->
     <!-- lib -->
     <script src="https://unpkg.com/typeit@8.4.0/dist/index.umd.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.3/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/ScrollTrigger.min.js"></script>
+
     <!-- js -->
     <script src="js/header.js"></script>
     <script src="js/typeit.js"></script>

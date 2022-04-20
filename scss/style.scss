@@ -3,28 +3,33 @@
 a {
     text-decoration: none;
 }
+body {
+    // overflow: hidden;
+}
+.inner {
+    max-width: 72.9vw;
+    margin: 0 auto;
+}
+
 
 header {
     width: 100%;
-    height: 80px;
+    height: 4.2vw;
     overflow: hidden;
 
     position: fixed;
     transition: all .3s;
 
     &.subBg {
-        height: 280px;
+        height: 14.6vw;
         background-color: #f9f9f9;
 
-        .inner a {
+        .inner #web_menu a {
             color: #868e96;
         }
     }
 
     .inner {
-        max-width: 1400px;
-        margin: 0 auto;
-
         position: relative;
 
         display: flex;
@@ -33,9 +38,8 @@ header {
 
         .logo {
             position: absolute;
-            top: 50px;
+            top: 35px;
             left: 0;
-            transform: translateY(-50%);
 
             font-family: 'SBAggroM';
             font-size: 1.875rem;
@@ -47,7 +51,7 @@ header {
         }
 
         #web_menu {
-            width: 489px;
+            width: 25.5vw;
             position: relative;
 
             font-family: 'GmarketSansMedium';
@@ -57,12 +61,12 @@ header {
             }
 
             .main_menu {
-                height: 280px;
+                height: 14.6vw;
                 display: flex;
                 justify-content: space-between;
 
                 .depth1 {
-                    width: 163px;
+                    width: 8.5vw;
                     font-size: 1.25rem;
                     text-align: center;
                     margin-top: 20px;
@@ -70,7 +74,7 @@ header {
                     position: relative;
 
                     .depth1Link {
-                        height: 100px;
+                        height: 5.2vw;
                         display: flex;
                         flex-direction: column;
                         justify-content: center;
@@ -80,7 +84,7 @@ header {
                             content: "";
                             display: block;
                             width: 100%;
-                            height: 5px;
+                            height: 0.3vw;
                             margin-top: 10px;
                             background-color: #00b8ff;
                             opacity: 0;
@@ -122,14 +126,98 @@ header {
                 }
             }
         }
+
+        #mobile_menu_btn {
+            position: absolute;
+            top: 35px;
+            right: 0;
+            font-size: 2rem;
+            color: #f9f9f9;
+            cursor: pointer;
+            display: none;
+            transition: all .3s;
+
+            &:hover {
+                color: #1971c2;
+            }
+        }
     }
 }
 
-main {
+#mobile_menu {
+    width: 30%;
+    height: 100vh;
+    background-color: #42C2FF;
+
+    position: fixed;
+    right: -100%;
+    z-index: 10;
+    transition: all .5s ease-in;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &.on {
+        right: 0;
+    }
+
+    .close {
+        margin: 35px 35px 50px;
+        align-self: flex-end;
+
+        font-size: 2.25rem;
+        color: #f9f9f9;
+
+        cursor: pointer;
+
+        &:hover {
+            color: #1971c2;
+            transition: all .3s;
+        }
+    }
+
+    .mobile_menu {
+        width: 65%;
+        a {
+            font-family: 'GmarketSansMedium';
+            color: #e9ecef;
+        }
+
+        .mobile_depth1 {
+            margin-bottom: 40px;
+
+            .mobile_depth1_link {
+                font-size: 1.6rem;
+
+                display: block;
+                margin-bottom: 10px;
+                box-sizing: border-box;
+                border-bottom: 1px solid #ced4da;
+            }
+
+            .mobile_depth2 {
+                margin-left: 5px;
+
+                li {
+                    margin-bottom: 5px;
+
+                    a:hover {
+                        color: #1971c2;
+                        transition: all .3s;
+                    }
+                }
+            }
+        }
+    }
+}
+
+main {    
     #main_img {
-        height: 940px;
-        background: url(/images/main_visual_fullscreen.jpg) no-repeat;
+        height: 49vw;
+        background: url(../images/main_visual_fullscreen.jpg) no-repeat;
         background-size: 100% auto;
+        margin-bottom: 100px;
 
         display: flex;
         justify-content: center;
@@ -148,6 +236,27 @@ main {
                 .color_blue {
                     color: #00b8ff;
                 }
+            }
+        }
+    }
+
+    #card_ani {
+        .inner {
+            position: relative;
+
+            display: flex;
+            justify-content: center;
+
+            .card_box {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+
+
+            }
+
+            .drop_ball {
+                position: absolute;
             }
         }
     }

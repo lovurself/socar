@@ -1,14 +1,80 @@
 @media screen and (max-width: 1400px) {
-  header .inner {
-    width: 1200px;
+  .inner {
+    width: 85.7vw;
+  }
+  header {
+    height: 5.7vw;
+  }
+  header.subBg {
+    height: 20vw;
+  }
+  main #main_img {
+    height: 56.3vw;
+  }
+  main #main_img .typeit_box #typeit_txt {
+    font-size: 3rem;
   }
 }
 
 @media screen and (max-width: 1200px) {
-  header .inner {
+  .inner {
     width: 95%;
   }
   header .inner nav {
     display: none;
+  }
+  header .inner #mobile_menu_btn {
+    display: block;
+  }
+  main #main_img .typeit_box #typeit_txt {
+    font-size: 2.25rem;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  header {
+    height: 8.5vw;
+  }
+  main #main_img .typeit_box #typeit_txt {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    height: 8.5vw;
+  }
+  header .inner .logo, header .inner #mobile_menu_btn {
+    top: 32.5px;
+    font-size: 1.5rem;
+  }
+  #mobile_menu {
+    width: 40%;
+  }
+  #mobile_menu .close {
+    margin: 35px 35px 40px;
+    font-size: 2rem;
+  }
+  #mobile_menu .mobile_menu .mobile_depth1 {
+    margin-bottom: 25px;
+  }
+  #mobile_menu .mobile_menu .mobile_depth1 .mobile_depth1_link {
+    font-size: 1.3rem;
+  }
+  main #main_img .typeit_box #typeit_txt {
+    font-size: 1.875rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  header {
+    height: 8.7vw;
+  }
+  header .inner .logo, header .inner #mobile_menu_btn {
+    top: 25px;
+    font-size: 1.175rem;
+  }
+  main #main_img .typeit_box #typeit_txt {
+    font-size: 1.3rem;
   }
 }
