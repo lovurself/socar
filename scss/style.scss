@@ -1,14 +1,17 @@
 @charset "utf-8";
 
+html {
+    scroll-behavior: smooth;
+}
 a {
     text-decoration: none;
-}
-body {
-    // overflow: hidden;
 }
 .inner {
     max-width: 72.9vw;
     margin: 0 auto;
+}
+.color_blue {
+    color: #00b8ff;
 }
 
 
@@ -19,6 +22,21 @@ header {
 
     position: fixed;
     transition: all .3s;
+    z-index: 5;
+
+    &.whiteBg {
+        background-color: rgba(255,255,255,0.5);
+
+        .inner {
+            .logo a {
+                color: #00b8ff;
+            }
+
+            #web_menu a {
+                color: #495057;
+            }
+        } 
+    }
 
     &.subBg {
         height: 14.6vw;
@@ -46,7 +64,7 @@ header {
             font-weight: bold;
             
             & > a {
-                color: #00b8ff;
+                color: #f9f9f9;
             }
         }
 
@@ -233,14 +251,13 @@ main {
                 .ti-cursor {
                     display: none;
                 }
-                .color_blue {
-                    color: #00b8ff;
-                }
             }
         }
     }
 
     #card_ani {
+        margin-bottom: 100px;
+
         .inner {
             position: relative;
 
@@ -248,15 +265,93 @@ main {
             justify-content: center;
 
             .card_box {
+                width: 100%;
                 display: flex;
-                flex-direction: column;
-                justify-content: space-between;
+                justify-content: center;
+                align-items: center;
 
+                ul {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
 
+                    .card {
+                        margin-bottom: 100px;
+
+                        ul {
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: space-between;
+                            align-items: center;
+
+                            li {
+                                width: 45%;
+    
+                                &.card_img {
+                                    img {
+                                        width: 100%;
+                                        height: auto;
+                                    }
+                                }
+
+                                &.card_txt {
+                                    font-family: 'LeeSeoyun';
+
+                                    h3 {
+                                        font-size: 3rem;
+                                        margin-bottom: 50px;
+                                    }
+                                    p {
+                                        span {
+                                            display: block;
+                                            font-size: 1.5rem;
+                                            margin-bottom: 5px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        
+                        &:nth-child(2n) ul {
+                            flex-direction: row-reverse;
+
+                            .card_txt {
+                                text-align: right;
+                            }
+                        }
+                    }
+                }
             }
 
             .drop_ball {
+                height: 96%;
+                
                 position: absolute;
+                top: 0;
+                left: 50%;
+                transform: translateX(-50%);
+
+                display: flex;
+                justify-content: center;
+
+                .line {
+                    display: block;
+                    width: 1px;
+                    height: 100%;
+                    background-color: #b1b1b1;
+
+                    .ball {
+                        width: 1vw;
+                        height: 1vw;
+                        border-radius: 50%;
+                        background-color: #00b8ff;
+
+                        position: absolute;
+                        top: 0;
+                        left: 50%;
+                        transform: translateX(-50%);
+                    }
+                }
             }
         }
     }

@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 a {
   text-decoration: none;
 }
@@ -7,6 +11,10 @@ a {
   margin: 0 auto;
 }
 
+.color_blue {
+  color: #00b8ff;
+}
+
 header {
   width: 100%;
   height: 4.2vw;
@@ -14,6 +22,19 @@ header {
   position: fixed;
   -webkit-transition: all .3s;
   transition: all .3s;
+  z-index: 5;
+}
+
+header.whiteBg {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+header.whiteBg .inner .logo a {
+  color: #00b8ff;
+}
+
+header.whiteBg .inner #web_menu a {
+  color: #495057;
 }
 
 header.subBg {
@@ -48,7 +69,7 @@ header .inner .logo {
 }
 
 header .inner .logo > a {
-  color: #00b8ff;
+  color: #f9f9f9;
 }
 
 header .inner #web_menu {
@@ -258,8 +279,8 @@ main #main_img .typeit_box #typeit_txt .ti-cursor {
   display: none;
 }
 
-main #main_img .typeit_box #typeit_txt .color_blue {
-  color: #00b8ff;
+main #card_ani {
+  margin-bottom: 100px;
 }
 
 main #card_ani .inner {
@@ -273,6 +294,19 @@ main #card_ani .inner {
 }
 
 main #card_ani .inner .card_box {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main #card_ani .inner .card_box ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -285,6 +319,91 @@ main #card_ani .inner .card_box {
           justify-content: space-between;
 }
 
+main #card_ani .inner .card_box ul .card {
+  margin-bottom: 100px;
+}
+
+main #card_ani .inner .card_box ul .card ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main #card_ani .inner .card_box ul .card ul li {
+  width: 45%;
+}
+
+main #card_ani .inner .card_box ul .card ul li.card_img img {
+  width: 100%;
+  height: auto;
+}
+
+main #card_ani .inner .card_box ul .card ul li.card_txt {
+  font-family: 'LeeSeoyun';
+}
+
+main #card_ani .inner .card_box ul .card ul li.card_txt h3 {
+  font-size: 3rem;
+  margin-bottom: 50px;
+}
+
+main #card_ani .inner .card_box ul .card ul li.card_txt p span {
+  display: block;
+  font-size: 1.5rem;
+  margin-bottom: 5px;
+}
+
+main #card_ani .inner .card_box ul .card:nth-child(2n) ul {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+main #card_ani .inner .card_box ul .card:nth-child(2n) ul .card_txt {
+  text-align: right;
+}
+
 main #card_ani .inner .drop_ball {
+  height: 96%;
   position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main #card_ani .inner .drop_ball .line {
+  display: block;
+  width: 1px;
+  height: 100%;
+  background-color: #b1b1b1;
+}
+
+main #card_ani .inner .drop_ball .line .ball {
+  width: 1vw;
+  height: 1vw;
+  border-radius: 50%;
+  background-color: #00b8ff;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }

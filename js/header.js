@@ -17,3 +17,14 @@ mobileMenuBtn.addEventListener('click', () => {
 closeBtn.addEventListener('click', () => {
     mobileMenu.classList.remove('on');
 })
+
+document.addEventListener("scroll", () => {
+    const sctop = document.documentElement.scrollTop;
+    console.log(sctop);
+
+    if (sctop >= 800) {
+        wrap.classList.add('whiteBg');
+    } else {
+        wrap.classList.remove('whiteBg');
+    }
+});
