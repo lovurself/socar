@@ -14,6 +14,16 @@
   main #main_img .typeit_box #typeit_txt {
     font-size: 3rem;
   }
+  main #card_ani .inner ul .card_wrap {
+    height: 550px;
+    margin-bottom: 50px;
+  }
+  main #card_ani .inner ul .card_wrap:nth-child(odd) .card_txt {
+    right: 50px;
+  }
+  main #card_ani .inner ul .card_wrap:nth-child(even) .card_txt {
+    left: 50px;
+  }
 }
 
 @media screen and (max-width: 1200px) {
@@ -25,9 +35,42 @@
   }
   header .inner #mobile_menu_btn {
     display: block;
+    color: #495057;
+  }
+  #mobile_menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   main #main_img .typeit_box #typeit_txt {
     font-size: 2.25rem;
+  }
+  main #card_ani .inner ul .card_wrap {
+    height: 450px;
+    margin-bottom: 25px;
+  }
+  main #card_ani .inner ul .card_wrap .card_txt h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  main #card_ani .inner ul .card_wrap .card_txt p {
+    font-size: 1.1rem;
+  }
+  main #card_ani .inner ul .card_wrap .card_txt p span {
+    margin-bottom: 5px;
+  }
+  main #card_ani .inner ul .card_wrap:nth-child(odd) .card_txt {
+    right: 0px;
+  }
+  main #card_ani .inner ul .card_wrap:nth-child(even) .card_txt {
+    left: 0px;
   }
 }
 

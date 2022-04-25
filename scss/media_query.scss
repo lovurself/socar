@@ -25,6 +25,29 @@
                 }
             }
         }
+
+        #card_ani {
+            .inner {
+                ul {
+                    .card_wrap {
+                        height: 550px;
+                        margin-bottom: 50px;
+
+                        &:nth-child(odd) {
+                            .card_txt {
+                                right: 50px;
+                            }
+                        }
+    
+                        &:nth-child(even) {    
+                            .card_txt {
+                                left: 50px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 
@@ -41,8 +64,15 @@
 
             #mobile_menu_btn {
                 display: block;
+                color: #495057;
             }
         }
+    }
+
+    #mobile_menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     main {
@@ -50,6 +80,44 @@
             .typeit_box {
                 #typeit_txt {
                     font-size: 2.25rem;
+                }
+            }
+        }
+
+        #card_ani {
+            .inner {
+                ul {
+                    .card_wrap {
+                        height: 450px;
+                        margin-bottom: 25px;
+
+                        .card_txt {    
+                            h2 {
+                                font-size: 2rem;
+                                margin-bottom: 10px;
+                            }
+    
+                            p {
+                                font-size: 1.1rem;
+    
+                                span {
+                                    margin-bottom: 5px;
+                                }
+                            }
+                        }
+
+                        &:nth-child(odd) {
+                            .card_txt {
+                                right: 0px;
+                            }
+                        }
+    
+                        &:nth-child(even) {    
+                            .card_txt {
+                                left: 0px;
+                            }
+                        }
+                    }
                 }
             }
         }
@@ -72,6 +140,7 @@
                 }
             }
         }
+
     }
 }
 

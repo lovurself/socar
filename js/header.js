@@ -16,13 +16,13 @@ mobileMenuBtn.addEventListener('click', () => {
 });
 closeBtn.addEventListener('click', () => {
     mobileMenu.classList.remove('on');
-})
+});
 
+// scroll animation
 document.addEventListener("scroll", () => {
     const sctop = document.documentElement.scrollTop;
-    console.log(sctop);
 
-    if (sctop >= 800) {
+    if (sctop >= 100) {
         wrap.classList.add('whiteBg');
     } else {
         wrap.classList.remove('whiteBg');
