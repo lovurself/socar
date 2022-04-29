@@ -14,14 +14,14 @@
   main #main_img .typeit_box #typeit_txt {
     font-size: 3rem;
   }
-  main #card_ani .inner ul .card_wrap {
+  main #card_ani .inner #web_card .card_wrap {
     height: 550px;
     margin-bottom: 50px;
   }
-  main #card_ani .inner ul .card_wrap:nth-child(odd) .card_txt {
+  main #card_ani .inner #web_card .card_wrap:nth-child(odd) .card_txt {
     right: 50px;
   }
-  main #card_ani .inner ul .card_wrap:nth-child(even) .card_txt {
+  main #card_ani .inner #web_card .card_wrap:nth-child(even) .card_txt {
     left: 50px;
   }
 }
@@ -35,7 +35,6 @@
   }
   header .inner #mobile_menu_btn {
     display: block;
-    color: #495057;
   }
   #mobile_menu {
     display: -webkit-box;
@@ -52,24 +51,23 @@
   main #main_img .typeit_box #typeit_txt {
     font-size: 2.25rem;
   }
-  main #card_ani .inner ul .card_wrap {
-    height: 450px;
+  main #card_ani .inner #web_card .card_wrap {
     margin-bottom: 25px;
   }
-  main #card_ani .inner ul .card_wrap .card_txt h2 {
+  main #card_ani .inner #web_card .card_wrap .card_txt h2 {
     font-size: 2rem;
     margin-bottom: 10px;
   }
-  main #card_ani .inner ul .card_wrap .card_txt p {
+  main #card_ani .inner #web_card .card_wrap .card_txt p {
     font-size: 1.1rem;
   }
-  main #card_ani .inner ul .card_wrap .card_txt p span {
+  main #card_ani .inner #web_card .card_wrap .card_txt p span {
     margin-bottom: 5px;
   }
-  main #card_ani .inner ul .card_wrap:nth-child(odd) .card_txt {
+  main #card_ani .inner #web_card .card_wrap:nth-child(odd) .card_txt {
     right: 0px;
   }
-  main #card_ani .inner ul .card_wrap:nth-child(even) .card_txt {
+  main #card_ani .inner #web_card .card_wrap:nth-child(even) .card_txt {
     left: 0px;
   }
 }
@@ -81,10 +79,16 @@
   main #main_img .typeit_box #typeit_txt {
     font-size: 2rem;
   }
+  main #card_ani .inner #web_card .card_wrap {
+    margin-bottom: 15px;
+  }
 }
 
 @media screen and (max-width: 768px) {
   header {
+    height: 8.5vw;
+  }
+  header.whiteBg {
     height: 8.5vw;
   }
   header .inner .logo, header .inner #mobile_menu_btn {
@@ -92,20 +96,94 @@
     font-size: 1.5rem;
   }
   #mobile_menu {
-    width: 40%;
+    width: 100%;
+    right: -100%;
+    text-align: center;
   }
   #mobile_menu .close {
-    margin: 35px 35px 40px;
-    font-size: 2rem;
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+  }
+  #mobile_menu .mobile_menu {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
   }
   #mobile_menu .mobile_menu .mobile_depth1 {
-    margin-bottom: 25px;
+    width: 15.6vw;
+    margin: 0 25px;
   }
   #mobile_menu .mobile_menu .mobile_depth1 .mobile_depth1_link {
     font-size: 1.3rem;
+    padding-bottom: 5px;
+  }
+  #mobile_menu .mobile_menu .mobile_depth1 .mobile_depth2 {
+    font-size: 1rem;
+    margin-left: 0;
   }
   main #main_img .typeit_box #typeit_txt {
     font-size: 1.875rem;
+  }
+  main #card_ani .inner #web_card {
+    display: none;
+  }
+  main #card_ani .inner #mobile_card {
+    display: block;
+  }
+  main #card_ani .inner #mobile_card .card_wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    margin-bottom: 50px;
+  }
+  main #card_ani .inner #mobile_card .card_wrap:nth-child(even) {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  main #card_ani .inner #mobile_card .card_wrap:nth-child(even) .card_txt {
+    text-align: left;
+  }
+  main #card_ani .inner #mobile_card .card_wrap .card_txt {
+    margin-top: 10px;
+    font-family: 'LeeSeoyun';
+    text-align: right;
+  }
+  main #card_ani .inner #mobile_card .card_wrap .card_txt h2 {
+    font-size: 2.5rem;
+    margin-bottom: 5px;
+  }
+  main #card_ani .inner #mobile_card .card_wrap .card_txt p {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    font-size: 1.2rem;
+  }
+  main #card_ani .inner #mobile_card .card_wrap img {
+    width: 80%;
+    height: auto;
   }
 }
 
@@ -117,7 +195,64 @@
     top: 25px;
     font-size: 1.175rem;
   }
+  #mobile_menu .mobile_menu .mobile_depth1 {
+    width: 18vw;
+  }
+  #mobile_menu .mobile_menu .mobile_depth1 .mobile_depth1_link {
+    font-size: 1rem;
+  }
+  #mobile_menu .mobile_menu .mobile_depth1 .mobile_depth2 {
+    font-size: 0.8rem;
+    margin-left: 0;
+  }
+  main #main_img {
+    margin-bottom: 50px;
+  }
   main #main_img .typeit_box #typeit_txt {
     font-size: 1.3rem;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  header {
+    height: 8.7vw;
+  }
+  header.whiteBg {
+    height: 10vw;
+  }
+  header .inner .logo, header .inner #mobile_menu_btn {
+    top: 20px;
+    font-size: 0.9rem;
+  }
+  #mobile_menu .close {
+    font-size: 1rem;
+  }
+  #mobile_menu .mobile_menu .mobile_depth1 .mobile_depth1_link {
+    font-size: 0.8rem;
+  }
+  #mobile_menu .mobile_menu .mobile_depth1 .mobile_depth2 {
+    font-size: 0.6rem;
+  }
+  main #main_img {
+    margin-bottom: 30px;
+  }
+  main #main_img .typeit_box #typeit_txt {
+    font-size: 1rem;
+  }
+  main #card_ani .inner #mobile_card .card_wrap {
+    margin-bottom: 30px;
+  }
+  main #card_ani .inner #mobile_card .card_wrap .card_txt {
+    margin-top: 4.5px;
+  }
+  main #card_ani .inner #mobile_card .card_wrap .card_txt h2 {
+    font-size: 1.5rem;
+  }
+  main #card_ani .inner #mobile_card .card_wrap .card_txt p {
+    font-size: 0.8rem;
+  }
+  main #card_ani .inner #mobile_card .card_wrap img {
+    width: 80%;
+    height: auto;
   }
 }

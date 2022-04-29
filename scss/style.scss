@@ -17,7 +17,7 @@ a {
 
 header {
     width: 100%;
-    height: 80px;
+    height: 4.2vw;
     overflow: hidden;
 
     position: fixed;
@@ -25,7 +25,7 @@ header {
     z-index: 5;
 
     &.whiteBg {
-        height: 80px;
+        height: 4.2vw;
         background-color: rgba(255,255,255,0.5);
 
         .inner {
@@ -36,7 +36,11 @@ header {
             #web_menu a {
                 color: #495057;
             }
-        } 
+
+            #mobile_menu_btn {
+                color: #495057;
+            }
+        }
     }
 
     &.subBg {
@@ -258,11 +262,11 @@ main {
         margin-bottom: 100px;
 
         .inner {
-            ul {
+            #web_card {
 
                 .card_wrap {
                     width: 100%;
-                    height: 650px;
+                    height: 33.9vw;
                     margin-bottom: 100px;
 
                     position: relative;
@@ -318,6 +322,10 @@ main {
                         }
                     }
                 }
+            }
+
+            #mobile_card {
+                display: none;  
             }
         }
     }

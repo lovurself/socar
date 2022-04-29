@@ -15,8 +15,8 @@
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/font.css" />
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
     <link rel="stylesheet" href="css/media_query.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
 
     <title>SOCAR</title>
   </head>
@@ -116,7 +116,7 @@
       <!-- 카드애니메이션 -->
       <section id="card_ani">
         <div class="inner">
-          <ul>
+          <ul id="web_card">
             <li class="card_wrap">
               <img
                 src="images/card_a.jpg"
@@ -177,11 +177,54 @@
               </div>
             </li>
           </ul>
+
+          <ul id="mobile_card">
+            <li class="card_wrap">
+              <img src="images/card_a.jpg" alt="24시간 언제나" />
+              <div class="card_txt">
+                <h2>24시간 <span class="color_blue">언제나</span></h2>
+                <p>
+                  <span>한밤중이나 주말에도 스마트폰으로</span>
+                  <span>시간에 구애받지 않고 쏘카와 함께 이동하세요.</span>
+                </p>
+              </div>
+            </li>
+            <li class="card_wrap">
+              <img src="images/card_b.jpg" alt="원하는 곳에서" />
+              <div class="card_txt">
+                <h2>원하는 <span class="color_blue">곳</span>에서</h2>
+                <p>
+                  <span>내 주변 3분 거리 쏘카존에서 혹은 내가 있는 곳으로</span>
+                  <span>쏘카를 불러 어디서나 편하게 출발하세요.</span>
+                </p>
+              </div>
+            </li>
+            <li class="card_wrap">
+              <img src="images/card_c.jpg" alt="필요한 시간만큼" />
+              <div class="card_txt">
+                <h2>필요한 <span class="color_blue">시간</span>만큼</h2>
+                <p>
+                  <span>간단한 장보기부터 주말여행까지</span>
+                  <span>10분 단위로 원하는 만큼만 이용하세요.</span>
+                </p>
+              </div>
+            </li>
+            <li class="card_wrap">
+              <img src="images/card_d.jpg" alt="다양한 차종을" />
+              <div class="card_txt">
+                <h2>다양한 <span class="color_blue">차종</span>을</h2>
+                <p>
+                  <span>연인과의 드라이브부터 가족 캠핑까지</span>
+                  <span>상황에 맞게 50여 종의 차량을 선택해서 이용하세요.</span>
+                </p>
+              </div>
+            </li>
+          </ul>
         </div>
       </section>
 
       <!-- 사용자수영역 -->
-      <section></section>
+      <section id="userCount"></section>
     </main>
 
     <!-- 푸터영역 -->

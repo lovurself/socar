@@ -28,7 +28,7 @@
 
         #card_ani {
             .inner {
-                ul {
+                #web_card {
                     .card_wrap {
                         height: 550px;
                         margin-bottom: 50px;
@@ -64,7 +64,6 @@
 
             #mobile_menu_btn {
                 display: block;
-                color: #495057;
             }
         }
     }
@@ -86,9 +85,9 @@
 
         #card_ani {
             .inner {
-                ul {
+                #web_card {
                     .card_wrap {
-                        height: 450px;
+                        // height: 450px;
                         margin-bottom: 25px;
 
                         .card_txt {    
@@ -141,12 +140,26 @@
             }
         }
 
+        #card_ani {
+            .inner {
+                #web_card {
+                    .card_wrap {
+                        // height: 400px;
+                        margin-bottom: 15px;
+                    }
+                }
+            }
+        }
     }
 }
 
 @media screen and (max-width: 768px) {
     header {
         height: 8.5vw;
+
+        &.whiteBg {
+            height: 8.5vw;
+        }
 
         .inner {
             .logo, #mobile_menu_btn {
@@ -157,19 +170,36 @@
     }
 
     #mobile_menu {
-        width: 40%;
-    
+        width: 100%;
+        right: -100%;
+
+        text-align: center;
+
         .close {
-            margin: 35px 35px 40px;    
-            font-size: 2rem;
+            font-size: 1.5rem;
+            margin-bottom: 30px;
         }
-    
-        .mobile_menu {    
+
+        .mobile_menu {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: flex-start;
+
             .mobile_depth1 {
-                margin-bottom: 25px;
+                width: 15.6vw;
+                margin: 0 25px;
 
                 .mobile_depth1_link {
                     font-size: 1.3rem;
+                    // border: none;
+                    padding-bottom: 5px;
+                }
+
+                .mobile_depth2 {
+                    font-size: 1rem;
+                    margin-left: 0;
                 }
             }
         }
@@ -180,6 +210,55 @@
             .typeit_box {
                 #typeit_txt {
                     font-size: 1.875rem;
+                }
+            }
+        }
+
+        #card_ani {
+            .inner {
+                #web_card {
+                    display: none;
+                }
+
+                #mobile_card {
+                    display: block;
+
+                    .card_wrap {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: flex-end;
+                        margin-bottom: 50px;
+
+                        &:nth-child(even) {
+                            align-items: flex-start;
+
+                            .card_txt {
+                                text-align: left;
+                            }
+                        }
+
+                        .card_txt {
+                            margin-top: 10px;
+
+                            font-family: 'LeeSeoyun';
+                            text-align: right;
+
+                            h2 {
+                                font-size: 2.5rem;
+                                margin-bottom: 5px;
+                            }
+                            p {
+                                display: flex;
+                                flex-direction: column;
+                                font-size: 1.2rem
+                            }
+                        }
+
+                        img {
+                            width: 80%;
+                            height: auto;
+                        }
+                    }
                 }
             }
         }
@@ -198,11 +277,102 @@
         }
     }
 
+    #mobile_menu {
+        .mobile_menu {
+            .mobile_depth1 {
+                width: 18vw;
+
+                .mobile_depth1_link {
+                    font-size: 1rem;
+                }
+
+                .mobile_depth2 {
+                    font-size: 0.8rem;
+                    margin-left: 0;
+                }
+            }
+        }
+    }
+
     main {
         #main_img {
+            margin-bottom: 50px;
+
             .typeit_box {
                 #typeit_txt {
                     font-size: 1.3rem;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 375px) {
+    header {
+        height: 8.7vw;
+
+        &.whiteBg {
+            height: 10vw;   
+        }
+
+        .inner {
+            .logo, #mobile_menu_btn {
+                top: 20px;
+                font-size: 0.9rem;
+            }
+        }
+    }
+
+    #mobile_menu {
+        .close {
+            font-size: 1rem;
+        }
+
+        .mobile_menu {
+            .mobile_depth1 {
+                .mobile_depth1_link {
+                    font-size: 0.8rem;
+                }
+                .mobile_depth2 {
+                    font-size: 0.6rem;
+                }
+            }
+        }
+    }
+
+    main {
+        #main_img {
+            margin-bottom: 30px;
+
+            .typeit_box {
+                #typeit_txt {
+                    font-size: 1rem;
+                }
+            }
+        }
+
+        #card_ani {
+            .inner {
+                #mobile_card {
+                    .card_wrap {
+                        margin-bottom: 30px;
+
+                        .card_txt {
+                            margin-top: 4.5px;
+
+                            h2 {
+                                font-size: 1.5rem;
+                            }
+                            p {
+                                font-size: 0.8rem
+                            }
+                        }
+
+                        img {
+                            width: 80%;
+                            height: auto;
+                        }
+                    }
                 }
             }
         }
