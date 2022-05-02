@@ -13,6 +13,10 @@
         &.subBg {
             height: 20vw;
         }
+
+        &.whiteBg {
+            height: 4.7vw;
+        }
     }
 
     main {
@@ -27,10 +31,11 @@
         }
 
         #card_ani {
+            margin-bottom: 150px;
+
             .inner {
                 #web_card {
                     .card_wrap {
-                        height: 550px;
                         margin-bottom: 50px;
 
                         &:nth-child(odd) {
@@ -47,6 +52,76 @@
                     }
                 }
             }
+        }
+
+        #users {
+            margin-bottom: 50px;
+
+            .inner {
+                .circle_img {
+                    left: 160px;
+                }
+
+                @keyframes scale {
+                    0% {}
+                    100% {
+                        transform: scale(10);
+                    }                    
+                }
+
+                .users_txt {
+                    padding-right: 160px;
+
+                    span {
+                        font-size: 1.3rem;
+                        margin-bottom: 10px;
+
+                        strong {
+                            font-size: 1.8rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    footer {
+        height: 18vw;
+
+        .inner {
+            .links {
+                width: 88%;
+    
+                a {
+                    font-size: 1rem
+                }
+            }
+
+            .footer_info {
+                width: 78%;
+
+                .corp_info {
+                    li {
+                        font-size: 0.8rem;
+                    }
+                }
+
+                .sns {
+                    .socar_app {
+                        width: 12.5vw;
+
+                        a {
+                            span {
+                                font-size: 0.9rem
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        p {
+            font-size: 0.8rem;
         }
     }
 }
@@ -66,6 +141,10 @@
                 display: block;
             }
         }
+
+        &.whiteBg {
+            height: 6vw;
+        }
     }
 
     #mobile_menu {
@@ -84,6 +163,8 @@
         }
 
         #card_ani {
+            margin-bottom: 100px;
+
             .inner {
                 #web_card {
                     .card_wrap {
@@ -120,6 +201,74 @@
                 }
             }
         }
+
+        #users {
+            margin-bottom: 50px;
+
+            .inner {
+                .circle_img {
+                    left: 200px;
+                }
+
+                @keyframes scale {
+                    0% {}
+                    100% {
+                        transform: scale(8.5);
+                    }                    
+                }
+
+                .users_txt {
+                    padding-right: 200px;
+
+                    span {
+                        font-size: 1.1rem;
+                        margin-bottom: 10px;
+
+                        strong {
+                            font-size: 1.5rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    footer {
+        height: 20vw;
+
+        .inner {
+            .links {    
+                a {
+                    font-size: 0.9rem
+                }
+            }
+
+            .footer_info {
+                width: 78%;
+
+                .corp_info {
+                    li {
+                        font-size: 0.7rem;
+                    }
+                }
+
+                .sns {
+                    .socar_app {
+                        width: 13.5vw;
+
+                        a {
+                            span {
+                                font-size: 0.9rem
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        p {
+            font-size: 0.7rem;
+        }
     }
 }
 
@@ -129,6 +278,20 @@
 @media screen and (max-width: 992px) {
     header {
         height: 8.5vw;
+
+        &.whiteBg {
+            height: 6vw;
+        }
+
+        .inner {
+            .logo {
+                top: 25px;
+            }
+
+            #mobile_menu_btn {
+                top: 23px;
+            }
+        }
     }
 
     main {
@@ -141,6 +304,8 @@
         }
 
         #card_ani {
+            margin-bottom: 80px;
+            
             .inner {
                 #web_card {
                     .card_wrap {
@@ -149,6 +314,104 @@
                     }
                 }
             }
+        }
+
+        #users {
+            margin-bottom: 0;
+
+            .inner {
+                .circle_img {
+                    left: 160px;
+                }
+
+                @keyframes scale {
+                    0% {}
+                    100% {
+                        transform: scale(6.5);
+                    }                    
+                }
+
+                .users_txt {
+                    padding-right: 160px;
+
+                    span {
+                        font-size: 1rem;
+                        margin-bottom: 8px;
+
+                        strong {
+                            font-size: 1.3rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    footer {
+        height: 23vw;
+        border: none;
+        background-color: #495057;
+        padding-top: 20px;
+
+        .inner {
+            height: 40%;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: flex-start;
+
+            .links {
+                width: auto;
+                
+                flex-direction: column;
+                align-items: flex-start;
+
+                a {
+                    font-size: 0.7rem;
+                    color: #888;
+                }
+            }
+
+            .footer_info {
+                width: 66.666%;
+
+                .corp_info {
+                    color: #888;
+
+                    li {
+                        font-size: 0.7rem;
+
+                        a {
+                            color: #999;
+                        }
+                    }
+                }
+
+                .sns {
+                    .sns_links {
+                        ul {
+                            li {
+                                a {
+                                    color: #888;
+                                }
+                            }
+                        }
+                    }
+
+                    .socar_app {
+                        width: 16vw;
+
+                        a {
+                            span {
+                                font-size: 0.8rem
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        p {
+            font-size: 0.7rem;
         }
     }
 }
@@ -262,6 +525,43 @@
                 }
             }
         }
+
+        #users {
+            .inner {
+                .circle_img {
+                    left: 100px;
+
+                    img {
+                        transform: scale(5);
+                    }
+                }
+
+                .users_txt {
+                    padding-right: 100px;
+                }
+            }
+        }
+    }
+
+    footer {
+        height: 33vw;
+
+        .inner {        
+            .footer_info {
+                .sns {
+                    .socar_app {
+                        width: 18vw;
+                        height: 3.8vw;
+
+                        a {
+                            span {
+                                font-size: 0.8rem
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 
@@ -303,6 +603,96 @@
                     font-size: 1.3rem;
                 }
             }
+        }
+
+        #users {
+            height: 22vw;
+
+            .inner {
+                justify-content: center;
+
+                .circle_img {
+                    display: none;
+                }
+                .users_txt {
+                    padding-right: 0;
+                }
+            }
+        }
+    }
+
+    footer {
+        height: 100vw;
+
+        .inner {
+            height: 90%;
+            flex-direction: column;
+            align-items: center;
+
+            .links {
+                width: 70%;
+                margin-bottom: 20px;
+                
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: flex-start;
+
+                li {
+                    margin: 0 20px 5px 0;
+
+                    a {
+                        font-size: 1.1em;
+                        color: #888;
+                    }
+                }
+            }
+
+            .footer_info {
+                width: 70%;
+                height: 60%;
+                
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                .corp_info {
+                    li {
+                        margin-bottom: 5px;
+                        font-size: 0.95rem;
+
+                        a {
+                            color: #999;
+                        }
+                    }
+                }
+
+                .sns {
+                    .sns_links {
+                        ul {
+                            li {
+                                a {
+                                    color: #888;
+                                }
+                            }
+                        }
+                    }
+
+                    .socar_app {
+                        width: 16vw;
+
+                        a {
+                            span {
+                                font-size: 0.8rem
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        p {
+            font-size: 0.7rem;
         }
     }
 }
@@ -375,6 +765,104 @@
                     }
                 }
             }
+        }
+
+        #users {
+            margin-bottom: 0;
+
+            .inner {
+                .circle_img {
+                    left: 160px;
+                }
+
+                @keyframes scale {
+                    0% {}
+                    100% {
+                        transform: scale(6.5);
+                    }                    
+                }
+
+                .users_txt {
+                    padding-right: 160px;
+
+                    span {
+                        font-size: 1rem;
+                        margin-bottom: 8px;
+
+                        strong {
+                            font-size: 1.3rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    footer {
+        height: 23vw;
+        border: none;
+        background-color: #495057;
+        padding-top: 20px;
+
+        .inner {
+            height: 40%;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: flex-start;
+
+            .links {
+                width: auto;
+                
+                flex-direction: column;
+                align-items: flex-start;
+
+                a {
+                    font-size: 0.7rem;
+                    color: #888;
+                }
+            }
+
+            .footer_info {
+                width: 66.666%;
+
+                .corp_info {
+                    color: #888;
+
+                    li {
+                        font-size: 0.7rem;
+
+                        a {
+                            color: #999;
+                        }
+                    }
+                }
+
+                .sns {
+                    .sns_links {
+                        ul {
+                            li {
+                                a {
+                                    color: #888;
+                                }
+                            }
+                        }
+                    }
+
+                    .socar_app {
+                        width: 16vw;
+
+                        a {
+                            span {
+                                font-size: 0.8rem
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        p {
+            font-size: 0.7rem;
         }
     }
 }
