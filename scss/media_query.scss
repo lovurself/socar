@@ -622,11 +622,12 @@
     }
 
     footer {
-        height: 100vw;
+        height: 70vw;
 
         .inner {
             height: 90%;
             flex-direction: column;
+            justify-content: center;
             align-items: center;
 
             .links {
@@ -653,10 +654,12 @@
                 height: 60%;
                 
                 flex-direction: column;
-                justify-content: center;
+                justify-content: space-around;
                 align-items: center;
 
                 .corp_info {
+                    margin-bottom: 15px;
+
                     li {
                         margin-bottom: 5px;
                         font-size: 0.95rem;
@@ -668,22 +671,31 @@
                 }
 
                 .sns {
+                    width: 100%;
+                    align-items: center;
+
                     .sns_links {
+                        width: 100%;
+                        margin-bottom: 15px;
+
                         ul {
-                            li {
-                                a {
-                                    color: #888;
-                                }
-                            }
+                            width: 50%;
+                            margin: 0 auto;
                         }
                     }
 
                     .socar_app {
-                        width: 16vw;
+                        width: 55%;
+                        height: 7vw;
+                        border-radius: 3.5vw;
 
                         a {
+                            img {
+                                display: none;
+                            }
+
                             span {
-                                font-size: 0.8rem
+                                font-size: 1rem
                             }
                         }
                     }
@@ -692,7 +704,7 @@
         }
 
         p {
-            font-size: 0.7rem;
+            font-size: 1rem;
         }
     }
 }
@@ -768,29 +780,16 @@
         }
 
         #users {
-            margin-bottom: 0;
+            height: 25vw;
 
             .inner {
-                .circle_img {
-                    left: 160px;
-                }
-
-                @keyframes scale {
-                    0% {}
-                    100% {
-                        transform: scale(6.5);
-                    }                    
-                }
-
                 .users_txt {
-                    padding-right: 160px;
-
-                    span {
-                        font-size: 1rem;
-                        margin-bottom: 8px;
-
+                    span {                        
+                        font-size: 0.9rem;
+                        margin-bottom: 5px;
+    
                         strong {
-                            font-size: 1.3rem;
+                            font-size: 1rem;
                         }
                     }
                 }
@@ -799,37 +798,41 @@
     }
 
     footer {
-        height: 23vw;
-        border: none;
-        background-color: #495057;
-        padding-top: 20px;
+        height: 100vw;
 
         .inner {
-            height: 40%;
-            flex-direction: row;
-            justify-content: space-around;
-            align-items: flex-start;
+            height: 90%;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
 
             .links {
-                width: auto;
-                
-                flex-direction: column;
-                align-items: flex-start;
+                width: 70%;
+                margin-bottom: 20px;
 
-                a {
-                    font-size: 0.7rem;
-                    color: #888;
+                li {
+                    margin: 0 20px 5px 0;
+
+                    a {
+                        font-size: 0.8em;
+                    }
                 }
             }
 
             .footer_info {
-                width: 66.666%;
+                width: 70%;
+                height: 60%;
+                
+                flex-direction: column;
+                justify-content: space-around;
+                align-items: center;
 
                 .corp_info {
-                    color: #888;
+                    margin-bottom: 15px;
 
                     li {
-                        font-size: 0.7rem;
+                        margin-bottom: 5px;
+                        font-size: 0.8rem;
 
                         a {
                             color: #999;
@@ -838,18 +841,23 @@
                 }
 
                 .sns {
+                    width: 100%;
+                    align-items: center;
+
                     .sns_links {
+                        width: 100%;
+                        margin-bottom: 15px;
+
                         ul {
-                            li {
-                                a {
-                                    color: #888;
-                                }
-                            }
+                            width: 50%;
+                            margin: 0 auto;
                         }
                     }
 
                     .socar_app {
-                        width: 16vw;
+                        width: 55%;
+                        height: 7vw;
+                        border-radius: 3.5vw;
 
                         a {
                             span {
@@ -862,7 +870,7 @@
         }
 
         p {
-            font-size: 0.7rem;
+            font-size: 0.8rem;
         }
     }
 }
