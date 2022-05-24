@@ -25,11 +25,8 @@ header {
     z-index: 5;
 
     &.whiteBg {
-        height: 4.2vw;
-        background-color: rgba(255,255,255,0.5);
-
         .inner {
-            .logo a {
+            .logo {
                 color: #00b8ff;
             }
 
@@ -47,8 +44,14 @@ header {
         height: 14.6vw;
         background-color: #f9f9f9;
 
-        .inner #web_menu a {
-            color: #868e96;
+        .inner {
+            .logo {
+                color: #00b8ff;
+                cursor: pointer;
+            }
+            #web_menu a {
+                color: #868e96;
+            }
         }
     }
 
@@ -67,10 +70,7 @@ header {
             font-family: 'SBAggroM';
             font-size: 1.875rem;
             font-weight: bold;
-            
-            & > a {
-                color: #f9f9f9;
-            }
+            color: #f9f9f9;
         }
 
         #web_menu {

@@ -22,7 +22,7 @@ closeBtn.addEventListener('click', () => {
 document.addEventListener("scroll", () => {
     const sctop = document.documentElement.scrollTop;
 
-    if (sctop >= 100) {
+    if (sctop >= 700) {
         wrap.classList.add('whiteBg');
     } else {
         wrap.classList.remove('whiteBg');

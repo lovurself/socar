@@ -12,10 +12,12 @@
 
         &.subBg {
             height: 20vw;
-        }
 
-        &.whiteBg {
-            height: 4.7vw;
+            .inner {
+                .logo {
+                    color: #00b8ff;
+                }
+            }
         }
     }
 
@@ -140,10 +142,6 @@
             #mobile_menu_btn {
                 display: block;
             }
-        }
-
-        &.whiteBg {
-            height: 6vw;
         }
     }
 
@@ -278,10 +276,6 @@
 @media screen and (max-width: 992px) {
     header {
         height: 8.5vw;
-
-        &.whiteBg {
-            height: 6vw;
-        }
 
         .inner {
             .logo {
@@ -419,10 +413,6 @@
 @media screen and (max-width: 768px) {
     header {
         height: 8.5vw;
-
-        &.whiteBg {
-            height: 8.5vw;
-        }
 
         .inner {
             .logo, #mobile_menu_btn {
@@ -712,10 +702,6 @@
 @media screen and (max-width: 375px) {
     header {
         height: 8.7vw;
-
-        &.whiteBg {
-            height: 10vw;   
-        }
 
         .inner {
             .logo, #mobile_menu_btn {

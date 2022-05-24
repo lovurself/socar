@@ -8,8 +8,8 @@
   header.subBg {
     height: 20vw;
   }
-  header.whiteBg {
-    height: 4.7vw;
+  header.subBg .inner .logo {
+    color: #00b8ff;
   }
   main #main_img {
     height: 56.3vw;
@@ -96,9 +96,6 @@
   }
   header .inner #mobile_menu_btn {
     display: block;
-  }
-  header.whiteBg {
-    height: 6vw;
   }
   #mobile_menu {
     display: -webkit-box;
@@ -195,9 +192,6 @@
 @media screen and (max-width: 992px) {
   header {
     height: 8.5vw;
-  }
-  header.whiteBg {
-    height: 6vw;
   }
   header .inner .logo {
     top: 25px;
@@ -306,9 +300,6 @@
 
 @media screen and (max-width: 768px) {
   header {
-    height: 8.5vw;
-  }
-  header.whiteBg {
     height: 8.5vw;
   }
   header .inner .logo, header .inner #mobile_menu_btn {
@@ -561,9 +552,6 @@
   header {
     height: 8.7vw;
   }
-  header.whiteBg {
-    height: 10vw;
-  }
   header .inner .logo, header .inner #mobile_menu_btn {
     top: 20px;
     font-size: 0.9rem;
@@ -684,3 +672,4 @@
     font-size: 0.8rem;
   }
 }
+/*# sourceMappingURL=media_query.css.map */

@@ -25,12 +25,7 @@ header {
   z-index: 5;
 }
 
-header.whiteBg {
-  height: 4.2vw;
-  background-color: rgba(255, 255, 255, 0.5);
-}
-
-header.whiteBg .inner .logo a {
+header.whiteBg .inner .logo {
   color: #00b8ff;
 }
 
@@ -45,6 +40,11 @@ header.whiteBg .inner #mobile_menu_btn {
 header.subBg {
   height: 14.6vw;
   background-color: #f9f9f9;
+}
+
+header.subBg .inner .logo {
+  color: #00b8ff;
+  cursor: pointer;
 }
 
 header.subBg .inner #web_menu a {
@@ -71,9 +71,6 @@ header .inner .logo {
   font-family: 'SBAggroM';
   font-size: 1.875rem;
   font-weight: bold;
-}
-
-header .inner .logo > a {
   color: #f9f9f9;
 }
 
@@ -631,3 +628,4 @@ footer .inner .footer_info .sns .socar_app a span {
 footer .inner p {
   font-size: 0.9rem;
 }
+/*# sourceMappingURL=style.css.map */
